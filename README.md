@@ -9,19 +9,19 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-###import head file
+##import head file
 ```Objective-C
 #import <VersionUpManager/VersionUpManager.h>
 ```
 
-###Use this when app's version number has changed
+##Use this when app's version number has changed
 ```Objective-C
  [[VersionUpManager sharedManager] runVersionUpdateProcessIfNeedsWith:^(NSString *oldVer, NSString *newVer) {
         NSLog(@"oldVer: %@, newVer:%@",oldVer, newVer);
     }];
 ```
 
-###Use this with your custom token
+##Use this with your custom token
 ```
 [[VersionUpManager sharedManager] runOnceWithToken:@"AnyToken" onProcessBlock:^(NSString *oldVer, NSString *newVer) {
         NSLog(@"Only run once with token: AnyToken");
@@ -40,7 +40,7 @@ pod "VersionUpManager"
 
 ## Author
 
-kmk, 44663768@163.com
+kmk, minghua1211@gmail.com
 
 ## License
 
