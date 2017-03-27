@@ -8,11 +8,13 @@
 
 #import "KOAppDelegate.h"
 
+
 @implementation KOAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+   
+    
     return YES;
 }
 

@@ -1,0 +1,16 @@
+PODS:
+  - VersionUpManager (0.1.0)
+
+DEPENDENCIES:
+  - VersionUpManager (from `../`)
+
+EXTERNAL SOURCES:
+  VersionUpManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  VersionUpManager: 31a04c1ef816ca97738ba6165845f8d9864ca6cd
+
+PODFILE CHECKSUM: abc1124a3b50bd54641ae8105bd26f71a3810e2e
+
+COCOAPODS: 1.2.0

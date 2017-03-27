@@ -7,8 +7,12 @@
 //
 
 #import "KOViewController.h"
+#import <VersionUpManager/VersionUpManager.h>
+
 
 @interface KOViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *lblOldVer;
+@property (weak, nonatomic) IBOutlet UILabel *lblNewVer;
 
 @end
 
@@ -17,7 +21,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    [[VersionUpManager sharedManager] runVersionUpdateProcessIfNeedsWith:^(NSString *oldVer, NSString *newVer) {
+        NSLog(@"oldVer:%@, newVer:%@",oldVer, newVer);
+        _lblOldVer.text = [NSString stringWithFormat:@"oldVer:%@", oldVer];
+        _lblNewVer.text = [NSString stringWithFormat:@"newVer:%@", newVer];
+    }];
+    
+    [[VersionUpManager sharedManager] runOnceWithToken:@"token" onProcessBlock:^(NSString *oldVer, NSString *newVer) {
+        NSLog(@"only run once with [token].");
+    }];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
