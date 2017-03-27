@@ -36,7 +36,7 @@ Get a run block only when App version string has changed.
   #   'VersionUpManager' => ['VersionUpManager/Assets/*.png']
   # }
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
+#s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
