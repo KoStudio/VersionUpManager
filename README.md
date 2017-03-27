@@ -9,6 +9,24 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+###import head file
+```Objective-C
+#import <VersionUpManager/VersionUpManager.h>
+```
+
+###Use this when app's version number has changed
+```Objective-C
+ [[VersionUpManager sharedManager] runVersionUpdateProcessIfNeedsWith:^(NSString *oldVer, NSString *newVer) {
+        NSLog(@"oldVer: %@, newVer:%@",oldVer, newVer);
+    }];
+```
+
+###Use this with your custom token
+```
+[[VersionUpManager sharedManager] runOnceWithToken:@"AnyToken" onProcessBlock:^(NSString *oldVer, NSString *newVer) {
+        NSLog(@"Only run once with token: AnyToken");
+    }];
+```
 ## Requirements
 
 ## Installation
