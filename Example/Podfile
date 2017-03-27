@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'VersionUpManager_Example' do
+  pod 'VersionUpManager', :path => '../'
+
+  target 'VersionUpManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
