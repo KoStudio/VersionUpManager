@@ -1,4 +1,4 @@
-# VersionUpManager
+# [VersionUpManager](https://kostudio.github.io/VersionUpManager)
 
 [![CI Status](http://img.shields.io/travis/kmk/VersionUpManager.svg?style=flat)](https://travis-ci.org/kmk/VersionUpManager)
 [![Version](https://img.shields.io/cocoapods/v/VersionUpManager.svg?style=flat)](http://cocoapods.org/pods/VersionUpManager)
