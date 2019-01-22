@@ -40,7 +40,7 @@ pod "VersionUpManager"
 
 ## Author
 
-kmk, minghua1211@gmail.com
+kmk, 44663768@163.com
 
 ## License
 
